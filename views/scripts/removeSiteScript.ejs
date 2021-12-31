@@ -1,0 +1,15 @@
+<script>
+    formElem.onsubmit = async (e) => {
+      e.preventDefault();
+      var form = document.querySelector("#formElem");
+      
+      title = form.querySelector('input[name="title"]').value;
+    
+        let response = await fetch(`/db/${title}`, {
+                method: 'DELETE',
+        })
+    
+        let text = await response.text(); // read response body as text
+        await window.location.reload();
+    };
+</script>

@@ -1,0 +1,117 @@
+const path = require('path');
+const express = require('express')
+const router = express.Router()
+
+
+let sitePath = path.join(__dirname, '../moudles/siteSchema');
+const Site = require(sitePath);
+
+// Getting all
+router.get('/', async (req, res) => {
+  try {
+    const site = await Site.find();
+    res.json(site);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+})
+
+// Getting One
+router.get('/:id', getSiteByTitle, (req, res) => {
+  res.json(res.site)
+})
+
+// Creating one
+router.post('/', async (req, res) => {
+  const site = new Site({
+    page_title: req.body.page_title,
+    title: req.body.title,
+    description: req.body.description
+  });
+
+  let checkDuplicate;
+  try {
+    checkDuplicate = await Site.findOne({title: site.title}).exec();
+    if (checkDuplicate != null){
+        return res.status(400).json({ message: "This Site Already Exist" });
+    }
+    const newSite = await site.save();
+    res.status(201).json(newSite);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+})
+
+// Updating One
+router.patch('/:id', getSiteByTitle, async (req, res) => {
+  if (req.body.page_title != null) {
+    res.site.page_title = req.body.page_title;
+  }
+  if (req.body.title != null) {
+    res.site.title = req.body.title;
+  }
+  if (req.body.description != null) {
+    res.site.description = req.body.description;
+  }
+  try {
+    const updatedSite = await res.site.save();
+    res.json(updatedSite);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+})
+
+// Deleting One
+router.delete('/:id', getSiteByTitle, async (req, res) => {
+  try {
+    await res.site.remove();
+    res.json({ message: 'Deleted Site' });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+})
+
+// Deleting All
+router.delete('/drop/:bool', async (req, res) => {
+  try {
+    const sites = await Site.find();
+    sites.forEach(site => {
+      site.remove();
+    });
+    res.json({ message: 'Deleted All Sites' });
+  } catch (err) {
+    res.status(500).json({ errMessage: err.message });
+  }
+})
+
+async function getSite(req, res, next) {
+  let site;
+  try {
+    site = await Site.findById(req.params.id);
+    if (site == null) {
+      return res.status(404).json({ message: 'Cannot find site' });
+    }
+  } catch (err) {
+    return res.status(500).json({ message: err.message });
+  }
+
+  res.site = site;
+  next();
+}
+
+async function getSiteByTitle(req, res, next) {
+    let site;
+    try {
+      site = await Site.findOne({title: req.params.id}).exec();
+      if (site == null) {
+        return res.status(404).json({ message: 'Cannot find site' });
+      }
+    } catch (err) {
+      return res.status(500).json({ message: err.message });
+    }
+  
+    res.site = site;
+    next();
+}
+
+module.exports = router;

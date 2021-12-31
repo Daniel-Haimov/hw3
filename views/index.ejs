@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title><%= page_title %></title>
+    <link rel="STYLESHEET" type="text/css" href="../static/css/style.css">
+    <!-- <script type='text/javascript' src="../static/scripts/setCookie.js"></script> -->
+</head>
+
+<body>
+    <table width="760" border="1" cellspacing="0" cellpadding="0" bordercolor="#0f2316" class="top">
+
+        <tr>
+            <td colspan="6">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="150" valign="top">
+
+                            <table width="100%" border="1" cellspacing="0" cellpadding="2" align="right" bordercolor="#9cb2a4" class="menu">
+                                <%- list %>
+                            </table>
+
+                        </td>
+                        <td width="1" bgcolor="#0f2316"></td>
+                        <td width="609" class="blurb">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="10"></td>
+                                    <td width="600" style="text-align:left;">
+                                        <h1><%= title %></h1>
+                                        <br />
+                                        <%- description %>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.4",
+    "path": "^0.12.7"
+  },
+  "name": "hw3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "startV2": "nodemon server.js",
+    "postprepare": "node server.js"
+  },
+  "author": "Daniel Haimov",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

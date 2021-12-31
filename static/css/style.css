@@ -1,0 +1,374 @@
+
+body
+{
+	background-color: #4c6d58;
+	text-align: center
+}
+table.top
+{
+	background-color: #9cb2a4;
+	
+}
+.navigationeven
+{
+background-color: #9cb2a4;
+text-align: center;
+width: 17%
+}
+.navigationeven a:link
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none
+}
+.navigationeven a:visited
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none
+}
+.navigationeven A:hover
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	text-decoration: underline
+}
+td.blurb
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	background-color: #E7F1EB;
+	color: #333333;
+	text-align: right;
+
+}
+td.blurb A:link
+{
+	FONT-FAMILY: Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	color: #294b35;
+	font-weight : bold;
+	text-decoration: underline;
+}
+td.blurb A:active
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	color: #0f2316;
+	text-decoration: underline;
+}
+td.blurb A:visited
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	color:#294b35;
+	font-weight : bold;
+	text-decoration: underline;
+}
+td.blurb A:hover
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	color:#0f2316;
+	font-weight : bold;
+	text-decoration: underline
+}
+H1
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew); 
+	 FONT-WEIGHT: normal; unicode-bidi: embed;
+	font-size: 20px;
+	margin-right: 1em;
+	margin-top: 1em;
+
+}
+H2
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-size: 18px;
+}
+
+p
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew) ;
+	font-size: 13px;
+	margin-left: 1em;
+}
+h3
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-size: 16px;
+	margin-left: 1em;
+}
+h4
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-size: 13px;
+	margin-left: 1em;
+	}
+.title_text
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-size: 15px;
+	margin-left: 1em;
+	FONT-WEIGHT: bold;
+}
+.text
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew) ;
+	font-size: 13px;
+	
+}
+.example
+{
+   DIRECTION: ltr;
+	background-color: #cccccc;
+	border: thin none;
+	color: black;
+	font-family: Courier, monospace;
+	width: 100%;
+	text-align : left;
+}
+P.navbar
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	background-color: #9cb2a4;
+	color: white;
+	font-size: 11px;
+	width: 520px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	text-align: center;
+	font-weight : bold;
+}
+P.navbar A:link
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	text-decoration : none;
+	text-align: center;
+}
+
+P.navbar A:visited
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	text-decoration : none;
+	text-align: center;
+
+}
+P.navbar A:hover
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	text-decoration : underline;
+	text-align: center;
+	
+}
+table.menu
+{
+	height: 240px;
+	width: 152px;
+
+}
+td.menueven
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	background-color: #294b35;
+	color: white;
+	font-size: 15px;
+}
+td.menueven a:link
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 15px;
+	color: #ffffff;
+}
+td.menueven a:visited
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 15px;
+	color: #ffffff;
+}
+td.menueven A:hover
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 15px;
+	color: white;
+}
+
+
+
+a:link
+{
+	DIRECTION: rtl;
+	FONT-FAMILY: Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	text-decoration : underline;
+	font-size: 12px;
+}
+
+A:visited
+{DIRECTION: rtl; FONT-FAMILY: Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+font-size: 12px;
+text-decoration : underline;}
+
+A:hover
+{DIRECTION: rtl; FONT-FAMILY: Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+font-size: 12px;
+text-decoration : underline;}
+
+li
+{
+	DIRECTION: rtl;
+	FONT-FAMILY: David (Hebrew);
+	FONT-SIZE: 12px;
+	FONT-WEIGHT: normal;
+	unicode-bidi: embed;
+	margin-right: 1em;
+	margin-top: 1em;
+	text-align: right;
+}
+.important
+{DIRECTION: rtl; FONT-FAMILY: Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+background-color: #cc3333;
+color: white;
+font-size: 12px;
+text-align: center;
+width: 90%}
+
+.excercise
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+background-color: #9cb2a4;
+color:  #4c6d58;
+	font-size: 15px;
+}
+h4.excercise
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	font-size: 12px;
+	margin-left: 1em;
+	color:white;
+}
+
+P.navigation-bar
+{
+FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	text-decoration : none;
+	text-align: center;
+	}
+.test {
+DIRECTION: ltr;
+	background-color: #cccccc;
+	border: thin none;
+	color: black;
+	font-family: Courier, monospace;
+	width: 100%;
+	text-align : left;
+	position:absolute; right: 30px}
+
+
+
+	/**browser**/
+TABLE.compatibility {
+	BORDER-RIGHT: #20537f 1px solid; BORDER-TOP: #20537f 1px solid; FONT-SIZE: 0.8em; MARGIN-LEFT: 1%; BORDER-LEFT: #20537f 1px solid; WIDTH: 98%; MARGIN-RIGHT: 1%; BORDER-BOTTOM: #20537f 1px solid
+}
+TD.featuredark {
+	PADDING-LEFT: 0.5em; WIDTH: 25%; COLOR: #b5cbe2; HEIGHT: 3em; BACKGROUND-COLOR: #4c6d58
+}
+TD.featuredarkindent {
+	PADDING-LEFT: 3em; WIDTH: 25%; COLOR: #b5cbe2; HEIGHT: 3em; BACKGROUND-COLOR: #4c6d58
+}
+TD.featurelight {
+	PADDING-LEFT: 0.5em; WIDTH: 25%; COLOR: #20537f; HEIGHT: 3em; BACKGROUND-COLOR:#9cb2a4
+}
+TD.featurelightindent {
+	PADDING-LEFT: 3em; WIDTH: 25%; COLOR: #20537f; HEIGHT: 3em; BACKGROUND-COLOR:#9cb2a4
+}
+TD.explorer {
+	FONT-WEIGHT: bold; COLOR: #b5cbe2; BACKGROUND-COLOR:#294b35; TEXT-ALIGN: center
+}
+TD.netscape {
+	FONT-WEIGHT: bold; COLOR: #b5cbe2; BACKGROUND-COLOR:#294b35; TEXT-ALIGN: center
+}
+TD.opera {
+	FONT-WEIGHT: bold; COLOR: #b5cbe2; BACKGROUND-COLOR: #294b35; TEXT-ALIGN: center
+}
+TD.webtv {
+	FONT-WEIGHT: bold; COLOR: #b5cbe2; BACKGROUND-COLOR: #294b35; TEXT-ALIGN: center
+}
+TD.windows {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.macintosh {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.all {
+	COLOR: #20537f; BACKGROUND-COLOR:#9cb2a4; TEXT-ALIGN: center
+}
+TD.threefive {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.iewinfour {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.iewinfive {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.iewinfivefive {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.iewinsix {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.iemacfour {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.iemacfourfive {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.iemacfive {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.nnfour {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.nnsix {
+	COLOR: #20537f; BACKGROUND-COLOR:#9cb2a4; TEXT-ALIGN: center
+}
+TD.operathreefive {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.operafive {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.webtvone {
+	COLOR: #20537f; BACKGROUND-COLOR: #9cb2a4; TEXT-ALIGN: center
+}
+TD.yes {
+	PADDING-BOTTOM: 0.2em; WIDTH: 8.3%; COLOR: #ffffff; PADDING-TOP: 0.2em; BACKGROUND-COLOR: #008000; TEXT-ALIGN: center
+}
+TD.buggy {
+	PADDING-BOTTOM: 0.2em; WIDTH: 8.3%; COLOR: #ffffff; PADDING-TOP: 0.2em; BACKGROUND-COLOR: #ff7f00; TEXT-ALIGN: center
+}
+TD.partial {
+	PADDING-BOTTOM: 0.2em; WIDTH: 8.3%; COLOR: #000000; PADDING-TOP: 0.2em; BACKGROUND-COLOR: #E7F1EB; TEXT-ALIGN: center
+}
+TD.no {
+	PADDING-BOTTOM: 0.2em; WIDTH: 8.3%; COLOR: #ffffff; PADDING-TOP: 0.2em; BACKGROUND-COLOR: #ff0000; TEXT-ALIGN: center
+}
+TD.nil {
+	PADDING-BOTTOM: 0.2em; WIDTH: 8.3%; COLOR: #ffffff; PADDING-TOP: 0.2em; BACKGROUND-COLOR: #20537f; TEXT-ALIGN: center
+}
+
+.bla
+{
+	FONT-FAMILY: Arial, Arial (Hebrew), David (Hebrew), Courier New (Hebrew);
+	background-color: #9cb2a4;
+	color: #333333;
+   text-align: right;
+}

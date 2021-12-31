@@ -1,0 +1,26 @@
+<script>
+    formElem.onsubmit = async (e) => {
+      e.preventDefault();
+      var form = document.querySelector("#formElem");
+     // var form = document.forms[0];
+    
+        data = {
+            page_title : form.querySelector('input[name="page_title"]').value,
+            title : form.querySelector('input[name="title"]').value,
+            description : form.querySelector('textarea[name="description"]').value
+        }
+    
+        let response = await fetch('/db', {
+                method: 'POST', // or 'PUT'
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+        })
+    
+        let text = await response.text(); // read response body as text
+        await window.location.reload();
+    
+        // document.querySelector("#result").innerHTML = text;
+    };
+    </script>
